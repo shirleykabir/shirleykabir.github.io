@@ -9,23 +9,38 @@ body {
     background-size: cover;
     -o-background-size: cover;
     margin-bottom: 50px;
-    width: 20%;
+    width: 30%;
     height: 50%;
     top: 0px;
     left: 0px;
-    position: fixed
+    position: fixed;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-#photo1 {
+#photo2 {
     background: url(second.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     margin-bottom: 50px;
-    width: 20%;
+    width: 30%;
     height: 50%;
     top: 50%;
     left: 0px;
-    position: fixed
+    position: fixed;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#photo1::before {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    width: 30%;
+    height: 50%;
+    display: block;
+    top: 0px;
+    left: 0px;
+    background-color: #dde424;
 }
