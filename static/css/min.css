@@ -2,3 +2,31 @@ body {
     background-color: #000;
 }
 
+
+#photo1 {
+    background: url(first.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+    width: 20%;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+    position: fixed
+}
+
+#photo1 {
+    background: url(second.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+    width: 20%;
+    height: 50%;
+    top: 50%;
+    left: 0px;
+    position: fixed
+}
