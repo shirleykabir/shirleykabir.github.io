@@ -2,45 +2,50 @@ body {
     background-color: #212121;
 }
 
-#photo1 {
-    background: url(first.jpg);
+#main {
+    background: url(dc4_edit.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    margin-bottom: 50px;
-    width: 30%;
-    height: 50%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-#photo2 {
-    background: url(third.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin-bottom: 50px;
-    width: 30%;
-    height: 50%;
-    top: 50%;
-    left: 0px;
-    position: fixed;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-#photo1::before {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    width: 30%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     display: block;
+    position: relative;
     top: 0px;
     left: 0px;
-    background-color: #dde424;
+}
+
+
+#title {
+    font-family: 'monda';
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 50px;
+    top: 30%;
+    position: relative;
+    line-height: 50px;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Monda';
+  text-transform: lowercase;
+  font-size: 30px;
+  line-height: 30px;
+  display: inline;
+  background-color: #3641FF;
+  padding: 2px 10px;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
