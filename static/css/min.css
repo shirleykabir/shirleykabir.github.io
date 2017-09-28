@@ -1,5 +1,6 @@
 body {
     background-color: #212121;
+    color: #fff;
 }
 
 #main {
@@ -9,23 +10,37 @@ body {
     background-size: cover;
     -o-background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 105%;
     display: block;
     position: relative;
     top: 0px;
     left: 0px;
 }
 
+#work {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color:  #eaeaea;
+    overflow: hidden;
+}
 
 #title {
     font-family: 'monda';
     color: #fff;
     font-size: 60px;
     font-weight: bold;
-    margin-left: 50px;
-    top: 30%;
     position: relative;
     line-height: 50px;
+    margin-bottom: 40px;
+}
+
+#landing {
+  position: relative;
+  top: 38%;
+  display: block;
+  margin-left: 100px;
+
 }
 
 h1 {
@@ -49,3 +64,23 @@ span {
     border-color: transparent;
   }
 }
+
+#navigation {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+}
+
+#navigation a {
+  color: #bdbdbd;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+  padding: 4px;
+}
+
+#navigation a:hover {
+  color: #FF3593;
+}
+
