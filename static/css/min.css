@@ -19,9 +19,9 @@ body {
 
 #work {
     display: block;
-    height: 100%;
+    height: 105%;
     width: 100%;
-    background-color:  #eaeaea;
+    background-color:  #212121;
     overflow: hidden;
 }
 
@@ -84,3 +84,69 @@ span {
   color: #FF3593;
 }
 
+/* WORK SECTION */
+#cuair, #sc3, #wicc, #wordworld, #rewriting, #puppetplant {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 33vw;
+    height: 50vh;
+    margin: -1px -1.5px;
+}
+table img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) brightness(80%) contrast(90%);
+    opacity: 0.65;
+}
+#cuair img {
+  width: 180%;
+  margin-top: -30%;
+  margin-left: -30%;
+}
+
+#sc3 img, #puppetplant img, #rewriting img, #wordworld img {
+  width: 100%;
+}
+
+#wordworld img {
+  width: 180%;
+  margin-top: -10%;
+  margin-left: -20%;
+}
+
+#wicc img {
+  width: 100%;
+  margin-top: -30%;
+}
+
+#cuair {
+  background-color: #a91400;
+}
+#sc3 {
+  background-color: rgb(39, 109, 154);
+}
+#wicc {
+  background-color: #06bf9f;
+}
+#puppetplant {
+  background-color: #00B385;
+}
+#wordworld {
+  background-color: #565656;
+}
+
+table { 
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.title {
+  position:absolute;
+  font-family: 'Monda';
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  top: calc(50% - 30px);
+  font-size: 40px;
+  text-transform: uppercase;
+}
