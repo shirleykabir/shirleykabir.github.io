@@ -78,6 +78,7 @@ span {
   margin-right: 20px;
   font-size: 18px;
   padding: 4px;
+  font-weight: 100;
 }
 
 #navigation a:hover {
@@ -142,9 +143,8 @@ table {
 
 .title {
   position:absolute;
-  font-family: Roboto;
+  font-family: 'Monda';
   z-index: 1;
-  font-weight: 300;
   text-align: center;
   width: 100%;
   top: calc(50% - 30px);
@@ -156,12 +156,11 @@ table {
 #desc {
     position: absolute;
     display: block;
-    font-family: 'Roboto';
-    font-size: 26px;
+    font-family: 'Monda';
+    font-size: 28px;
     line-height: 40px;
     width: 50%;
     text-align: left;
-    font-weight: 300;
     top: 0px;
     left: 0px;
     margin-top: -20px;
@@ -176,13 +175,13 @@ table {
     font-family: Roboto;
     padding: 10% 15%;
     font-size: 24px;
-    font-weight: 100;
     line-height: 34px;
 
 }
 #misc b {
     color: #ff37cc;
-    font-weight: 300;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 #misc i {
     display: block;
