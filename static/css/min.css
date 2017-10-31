@@ -341,3 +341,58 @@ h3 {
     padding-left: 10px;
     color: #d015a0;
 }
+
+/* More info */
+
+#info.cuair {
+    position: absolute;
+    background-color: #212121;
+    width: 0px;
+    height: calc(61vh - 100px);
+    display: block;
+    margin-top: -63vh;
+    z-index: 1;
+    margin-left: 25vw;
+    padding: 50px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#info h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Monda';
+    line-height: 50px;
+    margin: 0px;
+}
+
+#info i {
+    color: #212121;
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Monda';
+    font-size: 14px;
+    background-color: #e05845;
+    display: inline-block;
+    padding: 4px 10px;
+}
+
+.close {
+    display: block;
+    font-size: 12px;
+    opacity: 0.6;
+    position: absolute;
+    top: 20px;
+    right: 10vw;
+}

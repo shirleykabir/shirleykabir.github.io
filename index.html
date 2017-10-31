@@ -20,6 +20,10 @@
     
     <!--[endif]---->
     <script>
+        function openInfo() {
+            document.getElementById("info").style.display="block";
+            $( ".cuair" ).animate({ "opacity": "1", "width": "74vw"}, "slow" );
+        }
     </script>
 
 </head>
@@ -59,7 +63,7 @@
         <table>
             <tr>
                 <td>
-                    <div id="cuair">
+                    <div id="cuair" onclick="openInfo()">
                         <div class="title">CUAir</div>
                     </div>
                 </td>
@@ -81,7 +85,11 @@
             </tr>
         </table>
         <div id="expand">
-            <div id="info" class="cuair">Well hello.</div>
+            <div id="info" class="cuair">
+                <div class="close" onclick="closeInfo()">close</div>
+                <h4>Cornell University Unmanned Air Systems</h4>
+                <i>Business Team Member \\ Website Lead</i><br><br>
+                Well hello.</div>
             <div id="info" class="cornell">Well hello there.</div>
             <div id="info" class="inventure">Well hello there there.</div>
             <div id="info" class="wicc">Well hello there there there.</div>
