@@ -124,38 +124,137 @@ table img {
 #cuair {
   background-color: #a91400;
   background: url(../img/cuair3.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 #sc3 {
   background-color: rgb(39, 109, 154);
+  background: url(../img/sc3.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 #wicc {
   background-color: #06bf9f;
+  background: url(../img/wicc.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 #puppetplant {
   background-color: #00B385;
-}
-#wordworld {
-  background-color: #565656;
+  background: url(../img/puppetplant.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 #inventure {
   background-color: #82662f;
+  background: url(../img/inventure.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 #cornell {
   background-color: #633a3a;
+  background: url(../img/cmsx.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
+#cuair:before , #inventure:before,  #cornell:before, #wicc:before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,#3641ff,#000000);
+  opacity: .45; 
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 
+#sc3:before, #puppetplant:before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,#961576,#000000);
+  opacity: .45; 
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 
- #cuair:before , #inventure:before,  #cornell:before  {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-	opacity: .6; 
-  }
+#cuair:hover:before {
+  background-image: linear-gradient(to bottom right,#a91400,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+#wicc:hover:before {
+  background-image: linear-gradient(to bottom right,#06bf9f,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#cornell:hover:before, #inventure:hover:before {
+  background-image: linear-gradient(to bottom right,#656565,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#sc3:hover:before {
+  background-image: linear-gradient(to bottom right,rgba(39, 109, 154, 1),#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#puppetplant:hover:before {
+  background-image: linear-gradient(to bottom right,#00B385,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
 
 table { 
   border-spacing: 0;
@@ -215,4 +314,30 @@ table {
     text-transform: uppercase;
     color: #bdbdbd;
     font-size: 18px;
+}
+
+h2 {
+    font-family: 'Monda';
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: -15px;
+    padding-left: 65px;
+}
+h2::before {
+    content: "";
+    border-top: 1px solid #fff;
+    width: 50px;
+    display: block;
+    margin-top: 30px;
+    margin-left: -60px;
+    position: absolute;
+}
+h3 {
+    font-family: 'Monda';
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #d015a0;
 }
