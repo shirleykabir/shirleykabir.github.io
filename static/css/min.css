@@ -19,7 +19,6 @@ body {
 
 #work {
     display: block;
-    height: 105%;
     width: 100%;
     background-color:  #212121;
     overflow: hidden;
@@ -88,12 +87,12 @@ span {
 }
 
 /* WORK SECTION */
-#cuair, #sc3, #wicc, #wordworld, #rewriting, #puppetplant {
+#cuair, #sc3, #wicc, #wordworld, #rewriting, #puppetplant, #cornell, #inventure {
     position: relative;
     display: block;
     overflow: hidden;
-    width: 33vw;
-    height: 50vh;
+    width: 25vw;
+    height: 65vh;
     margin: -1px -1.5px;
 }
 table img {
@@ -124,21 +123,6 @@ table img {
 
 #cuair {
   background-color: #a91400;
-  background: url(cuair3.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#cuair:before {
-  content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-	opacity: .6; 
 }
 #sc3 {
   background-color: rgb(39, 109, 154);
@@ -152,6 +136,12 @@ table img {
 #wordworld {
   background-color: #565656;
 }
+#inventure {
+  background-color: #82662f;
+}
+#cornell {
+  background-color: #633a3a;
+}
 
 table { 
   border-spacing: 0;
@@ -160,12 +150,14 @@ table {
 
 .title {
   position:absolute;
-  font-family: 'Monda';
+  font-family: 'Roboto';
   z-index: 1;
-  text-align: center;
+  text-align: left;
+  left: 20px;
   width: 100%;
-  top: calc(50% - 30px);
-  font-size: 40px;
+  font-weight: 100;
+  top: calc(100% - 70px);
+  font-size: 38px;
   text-transform: uppercase;
 }
 
