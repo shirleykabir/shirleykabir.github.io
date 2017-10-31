@@ -4,7 +4,7 @@ body {
 }
 
 #main {
-    background: url(dc4_edit.jpg);
+    background: url(../img/dc4_edit.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -123,6 +123,7 @@ table img {
 
 #cuair {
   background-color: #a91400;
+  background: url(../img/cuair3.jpg);
 }
 #sc3 {
   background-color: rgb(39, 109, 154);
@@ -142,6 +143,19 @@ table img {
 #cornell {
   background-color: #633a3a;
 }
+
+
+
+ #cuair:before , #inventure:before,  #cornell:before  {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
 
 table { 
   border-spacing: 0;
