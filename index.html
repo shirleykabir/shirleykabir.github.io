@@ -10,9 +10,11 @@
 
     <link rel="icon" type="image/png" href="img/tabicon.png">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/resolution.css" rel="stylesheet">
+    <link href="static/css/resolution.css" rel="stylesheet">
     <link href="static/css/min.css" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:400,700|Ubuntu:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:100,300,400,400i,500,700" rel="stylesheet">
@@ -20,10 +22,29 @@
     
     <!--[endif]---->
     <script>
-        function openInfo() {
-            document.getElementById("info").style.display="block";
-            $( ".cuair" ).animate({ "opacity": "1", "width": "74vw"}, "slow" );
+        function openCUAirInfo() {
+            $("#info.cuair" ).show( "fast" );
+            $("#info.cuair" ).animate({ "opacity": "1"}, "slow" );
+            $('#cornell').addClass('changeBackground');
+            $('#inventure').addClass('changeBackground');
+            $('#wicc').addClass('changeBackground');
+            $('#cuair').addClass('keepCUAir');
+            
         }
+        function closeCUAirInfo() {
+            $( "#info.cuair" ).animate({ "opacity": "0"}, "slow" );
+            $( "#info.cuair" ).hide( "slow");
+            $('#cornell').removeClass('changeBackground');
+            $('#inventure').removeClass('changeBackground');
+            $('#wicc').removeClass('changeBackground');
+            $('#cuair').removeClass('keepCUAir');  
+        }
+        
+        $(function() {
+            $( "#info" ).hide();
+        });
+        
+ 
     </script>
 
 </head>
@@ -63,7 +84,7 @@
         <table>
             <tr>
                 <td>
-                    <div id="cuair" onclick="openInfo()">
+                    <div id="cuair" onclick="openCUAirInfo()">
                         <div class="title">CUAir</div>
                     </div>
                 </td>
@@ -86,10 +107,14 @@
         </table>
         <div id="expand">
             <div id="info" class="cuair">
-                <div class="close" onclick="closeInfo()">close</div>
+                <div class="close" onclick="closeCUAirInfo()">close</div>
                 <h4>Cornell University Unmanned Air Systems</h4>
                 <i>Business Team Member \\ Website Lead</i><br><br>
-                Well hello.</div>
+            <b>CUAir is an undergraduate research group that develops an autonomous unmanned aircraft that is capable of takeoff, landing, waypoint navigation, and object recognition and classification. CUAir is the top undergraduate unmanned aerial systems (UAS) team in the United States and competes in the Association for Unmanned Vehicle Systems International (AUVSI) annual Student Unmanned Air Systems (SUAS) competition against over 50 different teams from all across the world including India, Canada, and Israel.</b>
+            <p>Began the design and development process of the current website (cuair.org) as of March 2017, and continuing to manage the website and update profiles.</p>
+            <p>Constantly updating the website to incorporate new technologies, incorporate more information about the team, and display the work done by each individual.</p>
+            <p>On the business team, also responsible for organizing social events, exposing the engineering world to younger audiences, such as high schoolers and middle schoolers, and informing the Ithaca community of our work, and application of our classroom skills into real world development.</p>
+            </div>
             <div id="info" class="cornell">Well hello there.</div>
             <div id="info" class="inventure">Well hello there there.</div>
             <div id="info" class="wicc">Well hello there there there.</div>
@@ -120,16 +145,6 @@
     </div>
     
     <!-- jQuery -->
-    <script src="js/other.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script> <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script> <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <link href="css/resolution.css" rel="stylesheet">
-    <script src="js/clean-blog.js"></script> <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-
 
 
 </body></html>

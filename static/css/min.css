@@ -347,24 +347,26 @@ h3 {
 #info.cuair {
     position: absolute;
     background-color: #212121;
-    width: 0px;
+    width: calc(75vw-100px);
     height: calc(61vh - 100px);
     display: block;
     margin-top: -63vh;
     z-index: 1;
     margin-left: 25vw;
-    padding: 50px;
+    padding: 0px 50px;
     font-family: Roboto;
     font-size: 14px;
     line-height: 18px;
     font-weight: 300;
     opacity: 0;
-    display: none;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
+    overflow-y: scroll;
+    border-bottom: 50px solid #212121;
+    border-top: 50px solid #212121;
 }
 
 #info h4 {
@@ -383,16 +385,47 @@ h3 {
     font-weight: 300;
     font-family: 'Monda';
     font-size: 14px;
-    background-color: #e05845;
+    background-color: #de617d;
     display: inline-block;
     padding: 4px 10px;
 }
 
 .close {
-    display: block;
+  position: absolute;
+  right: 40px;
+  z-index: 100;
+}
+
+.changeBackground {
+    -webkit-filter: grayscale(100%) blur(0.5px);
+    filter: grayscale(100%) blur(0.5px);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#cuair.keepCUAir:before {
+  background-image: linear-gradient(to bottom right,#a91400,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+
+#info b {
+    font-weight: 300;
+    font-style: italic;
+    color: #e2e2e2;
+}
+
+#info p::before {
+    content: "----";
+    margin-right: 10px;
+    font-weight: 300;
     font-size: 12px;
-    opacity: 0.6;
-    position: absolute;
-    top: 20px;
-    right: 10vw;
 }
