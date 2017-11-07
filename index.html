@@ -30,15 +30,11 @@
             $('#cornell').addClass('changeBackground');
             $('#inventure').addClass('changeBackground');
             $('#wicc').addClass('changeBackground');
-            $('#cuair').addClass('keepCUAir');
-            
+            $('#cuair').addClass('keepCUAir'); 
         }
         function closeCUAirInfo() {
             $( "#info.cuair" ).animate({ "opacity": "0"}, "slow" );
             $( "#info.cuair" ).hide( "slow");
-            $('#cornell').removeClass('changeBackground');
-            $('#inventure').removeClass('changeBackground');
-            $('#wicc').removeClass('changeBackground');
             $('#cuair').removeClass('keepCUAir');  
         }
         
@@ -91,17 +87,17 @@
                     </div>
                 </td>
                 <td>
-                    <div id="cornell">
+                    <div id="cornell" onclick="openCornellInfo()">
                         <div class="title">Cornell CMSX</div>
                     </div>
                 </td>
                 <td>
-                    <div id="inventure">
+                    <div id="inventure" onclick="openInventureInfo()">
                         <div class="title">InVenture+</div>
                     </div>
                 </td>
                 <td>
-                    <div id="wicc">
+                    <div id="wicc" onclick="openWICCInfo()">
                         <div class="title">WICC</div>
                     </div>
                 </td>
@@ -117,9 +113,24 @@
             <p>Constantly updating the website to incorporate new technologies, incorporate more information about the team, and display the work done by each individual.</p>
             <p>On the business team, also responsible for organizing social events, exposing the engineering world to younger audiences, such as high schoolers and middle schoolers, and informing the Ithaca community of our work, and application of our classroom skills into real world development.</p>
             </div>
-            <div id="info" class="cornell">Well hello there.</div>
-            <div id="info" class="inventure">Well hello there there.</div>
-            <div id="info" class="wicc">Well hello there there there.</div>
+            <div id="info" class="cornell">
+                <div class="close" onclick="closeCornellInfo()">close</div>
+                <h4>Cornell CMSX</h4>
+                <i>Software Developer</i><br><br>
+            <b>\\ About Cornell CMSX</b>
+            <p>\\ About position at Cornell CMSX</p></div>
+            <div id="info" class="inventure">
+                <div class="close" onclick="closeInventureInfo()">close</div>
+                <h4>inVenture+</h4>
+                <i>Full Stack Developer</i><br><br>
+            <b>\\ About inVenture+</b>
+            <p>\\ About position at inVenture+</p></div>
+            <div id="info" class="wicc">
+                <div class="close" onclick="closeWICCInfo()">close</div>
+                <h4>Women in Computing at Cornell</h4>
+                <i>Secretary</i><br><br>
+            <b>\\ About WICC</b>
+            <p>\\ About position at WICC</div>
         </div>
         
         
