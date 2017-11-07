@@ -182,8 +182,8 @@ table img {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right,#3641ff,#000000);
-  opacity: .45; 
+  background-image: linear-gradient(to bottom right,#757575,#000000);
+  opacity: .6; 
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -198,8 +198,8 @@ table img {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right,#961576,#000000);
-  opacity: .45; 
+  background-image: linear-gradient(to bottom right,#757575,#000000);
+  opacity: .6; 
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -208,7 +208,7 @@ table img {
 }
 
 #cuair:hover:before {
-  background-image: linear-gradient(to bottom right,#a91400,#000000);
+  background-image: linear-gradient(to bottom right,#ec270c,#000000);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -227,7 +227,17 @@ table img {
 }
 
 #cornell:hover:before, #inventure:hover:before {
-  background-image: linear-gradient(to bottom right,#656565,#000000);
+  background-image: linear-gradient(to bottom right,#d212f5,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#cornell:hover:before {
+  background-image: linear-gradient(to bottom right,#f51251,#000000);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -237,7 +247,7 @@ table img {
 }
 
 #sc3:hover:before {
-  background-image: linear-gradient(to bottom right,rgba(39, 109, 154, 1),#000000);
+  background-image: linear-gradient(to bottom right,rgb(29, 155, 236),#000000);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -348,9 +358,9 @@ h3 {
     position: absolute;
     background-color: #212121;
     width: calc(75vw-100px);
-    height: calc(61vh - 100px);
+    height: calc(65vh - 100px);
     display: block;
-    margin-top: -63vh;
+    margin-top: -65vh;
     z-index: 1;
     margin-left: 25vw;
     padding: 0px 50px;
