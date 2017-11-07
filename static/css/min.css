@@ -128,11 +128,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-    -webkit-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  z-index: 1;
 }
 #sc3 {
   background-color: rgb(39, 109, 154);
@@ -141,6 +142,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
 }
 #wicc {
   background-color: #06bf9f;
@@ -149,6 +156,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
 }
 #puppetplant {
   background-color: #00B385;
@@ -157,6 +170,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
 }
 #inventure {
   background-color: #82662f;
@@ -165,6 +184,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
 }
 #cornell {
   background-color: #633a3a;
@@ -226,7 +251,7 @@ table img {
   opacity: 0.6;
 }
 
-#cornell:hover:before, #inventure:hover:before {
+#inventure:hover:before {
   background-image: linear-gradient(to bottom right,#d212f5,#000000);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -354,10 +379,10 @@ h3 {
 
 /* More info */
 
-#info.cuair {
+#info.cuair, #info.cornell, #info.inventure, #info.wicc {
     position: absolute;
     background-color: #212121;
-    width: calc(75vw-100px);
+    width: calc(75vw - 100px);
     height: calc(65vh - 100px);
     display: block;
     margin-top: -65vh;
@@ -416,6 +441,36 @@ h3 {
   opacity: 0.6;
 }
 
+#cornell.keepCornell:before {
+  background-image: linear-gradient(to bottom right,#f51251,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#inventure.keepInventure:before {
+  background-image: linear-gradient(to bottom right,#d212f5,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
+#wicc.keepWICC:before {
+  background-image: linear-gradient(to bottom right,#06bf9f,#000000);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.6;
+}
+
 #info b {
     font-weight: 300;
     font-style: italic;
@@ -427,16 +482,4 @@ h3 {
     margin-right: 10px;
     font-weight: 300;
     font-size: 12px;
-}
-
-.secondMoveTo {
-  margin-left: -25vw;
-}
-
-.thirdMoveTo {
-  margin-left: -50vw;
-}
-
-.fourthMoveTo {
-  margin-left: -75vw;
 }

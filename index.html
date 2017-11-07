@@ -24,23 +24,61 @@
     
     <!--[endif]---->
     <script>
+        $(function() {
+            $("#info.cornell").hide();
+            $("#info.cuair").hide();
+            $("#info.wicc").hide();
+            $("#info.inventure").hide();
+        });
+        
         function openCUAirInfo() {
-            $("#info.cuair" ).show( "fast" );
-            $("#info.cuair" ).animate({ "opacity": "1"}, "slow" );
-            $('#cornell').addClass('changeBackground');
-            $('#inventure').addClass('changeBackground');
-            $('#wicc').addClass('changeBackground');
+            $("#info.cuair").show("fast");
+            $("#info.cuair").animate({ "opacity": "1"}, "slow" );
             $('#cuair').addClass('keepCUAir'); 
         }
         function closeCUAirInfo() {
-            $( "#info.cuair" ).animate({ "opacity": "0"}, "slow" );
-            $( "#info.cuair" ).hide( "slow");
+            $( "#info.cuair").animate({ "opacity": "0"}, "slow" );
+            $( "#info.cuair").delay(500).hide("slow");
             $('#cuair').removeClass('keepCUAir');  
         }
+        function openCornellInfo() {
+            $("#info.cornell").show("fast");
+            $("#info.cornell").animate({ "opacity": "1"}, "slow" );
+            $('#cornell').addClass('keepCornell');
+            $("#cornell" ).delay(1500).animate({ "margin-left": "-25vw"}, "slow" );
+        }
+        function closeCornellInfo() {
+            $("#cornell" ).animate({ "margin-left": "0"}, "slow" );
+            $( "#info.cornell").animate({ "opacity": "0"}, "slow" );
+            $( "#info.cornell").delay(500).hide( "slow");
+            $('#cornell').removeClass('keepCornell');  
+        }
+        function openInventureInfo() {
+            $("#info.inventure" ).show("fast");
+            $("#info.inventure" ).animate({ "opacity": "1"}, "slow" );
+            $('#inventure').addClass('keepInventure');
+            $("#inventure" ).delay(1500).animate({ "margin-left": "-50vw"}, "slow" );
+        }
+        function closeInventureInfo() {
+            $("#inventure" ).animate({ "margin-left": "0"}, "slow" );
+            $("#info.inventure").animate({ "opacity": "0"}, "slow" );
+            $("#info.inventure").delay(500).hide( "slow");
+            $('#inventure').removeClass('keepInventure');  
+        }
+        function openWICCInfo() {
+            $("#info.wicc" ).show("fast");
+            $("#info.wicc" ).animate({ "opacity": "1"}, "slow" );
+            $('#wicc').addClass('keepWICC');
+            $("#wicc" ).delay(1500).animate({ "margin-left": "-50vw"}, "slow" );
+        }
+        function closeWICCInfo() {
+            $("#wicc" ).animate({ "margin-left": "0"}, "slow" );
+            $("#info.wicc").animate({ "opacity": "0"}, "slow" );
+            $("#info.inventure").delay(500).hide( "slow");
+            $('#wicc').removeClass('keepWICC');  
+        }
         
-        $(function() {
-            $( "#info" ).hide();
-        });
+        
         
  
     </script>
