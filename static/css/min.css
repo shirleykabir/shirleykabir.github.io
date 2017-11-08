@@ -4,17 +4,34 @@ body {
 }
 
 #main {
-    background: url(../img/dc4_edit.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#main::before {
+    content: "";
+    background: url(../img/paint.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     width: 100%;
-    height: 105%;
+    height: 100%;
     display: block;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+    -webkit-filter: grayscale(100%)  brightness(80%) contrast(90%);
+    filter: grayscale(100%) brightness(80%) contrast(80%);
+   
 }
 
 #work {
@@ -29,8 +46,10 @@ body {
     color: #fff;
     font-size: 60px;
     font-weight: bold;
+    width: 40%;
     position: relative;
-    line-height: 50px;
+    line-height: 60px;
+    margin-top: -20px;
     margin-bottom: 40px;
 }
 
@@ -77,9 +96,9 @@ span {
   color: #bdbdbd;
   text-decoration: none;
   margin-right: 20px;
-  font-size: 17px;
+  font-size: 15px;
   padding: 4px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 #navigation a:hover {
@@ -198,6 +217,12 @@ table img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
 }
 
 #cuair:before , #inventure:before,  #cornell:before, #wicc:before  {
@@ -331,15 +356,17 @@ table {
 
 #misc {
     font-family: Roboto;
-    background-color: #480938;
-    padding: 10% 15%;
+    background-color: #020438;
+    opacity: 1;
+    z-index ;1;
+    padding: 20% 15%;
     font-size: 24px;
     line-height: 34px;
     font-weight: 100;
 
 }
 #misc b {
-    color: #ff37cc;
+    color: #969bff;
     font-weight: 100;
 }
 #misc i {
@@ -374,7 +401,7 @@ h3 {
     font-size: 24px;
     line-height: 20px;
     padding-left: 10px;
-    color: #d015a0;
+    color: #969bff;
 }
 
 /* More info */
