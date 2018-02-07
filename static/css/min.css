@@ -1,3 +1,70 @@
+@font-face {
+    font-family: 'denseregular';
+    src: url('../../fonts/fonts/dense-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/dense-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'momobomedium';
+    src: url('../../fonts/fonts/momobo-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/momobo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qanelas_soft_demoextrabold';
+    src: url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qanelas_soft_demoultralight';
+    src: url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qontraregular';
+    src: url('../../fonts/fonts/qontra-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/qontra-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'radnikamedium';
+    src: url('../../fonts/fonts/radnika-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/radnika-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'radnikamedium_condensed';
+    src: url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'simplificasimplifica';
+    src: url('../../fonts/fonts/simplifica_typeface-webfont.woff2') format('woff2'),
+         url('../../fonts/fonts/simplifica_typeface-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-color: #0e0e0e;
     color: #fff;
@@ -31,7 +98,7 @@ body {
     z-index: -1;
     -webkit-filter: brightness(100%) contrast(70%);
     filter: brightness(100%) contrast(70%);
-   
+
 }
 
 #work {
@@ -42,10 +109,9 @@ body {
 }
 
 #title {
-    font-family: 'monda';
+    font-family: 'radnikamedium';
     color: #fff;
     font-size: 60px;
-    font-weight: bold;
     width: 40%;
     position: relative;
     line-height: 60px;
@@ -63,7 +129,7 @@ body {
 
 h1 {
   color: #fff;
-  font-family: 'Monda';
+  font-family: 'radnikamedium';
   text-transform: lowercase;
   font-size: 30px;
   line-height: 30px;
@@ -86,7 +152,7 @@ span {
 #navigation {
   margin-top: 40px;
   line-height: 28px;
-  font-family: 'Roboto Condensed';
+  font-family: 'radnikamedium_condensed';
   text-transform: uppercase;
   font-weight: 300;
   width: 35%;
@@ -233,7 +299,7 @@ table img {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom right,#757575,#000000);
-  opacity: .6; 
+  opacity: .6;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -249,7 +315,7 @@ table img {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom right,#757575,#000000);
-  opacity: .6; 
+  opacity: .6;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -316,7 +382,7 @@ table img {
   opacity: 0.6;
 }
 
-table { 
+table {
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -338,9 +404,9 @@ table {
 #desc {
     position: absolute;
     display: block;
-    font-family: 'Helvetica Neue', Roboto;
-    font-weight: 200;
-    font-size: 30px;
+    font-family: '';
+    font-weight: 100;
+    font-size: 25px;
     line-height: 44px;
     width: 40%;
     text-align: left;
