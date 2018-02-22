@@ -66,7 +66,7 @@
 }
 
 body {
-    background-color: #0e0e0e;
+    background-color: #fefefe;
     color: #fff;
 }
 
@@ -83,35 +83,32 @@ body {
 
 #main::before {
     content: "";
-    background: url(../img/duff1.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../img/me.jpg);
+    background-size: 120%;
     width: 100%;
     height: 100%;
     display: block;
     position: absolute;
+    background-position: -40% 75%;
     top: 0px;
     left: 0px;
-    opacity: 0.35;
     z-index: -1;
-    -webkit-filter: brightness(100%) contrast(70%);
-    filter: brightness(100%) contrast(70%);
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
 
 }
 
 #work {
     display: block;
     width: 100%;
-    background-color: #0e0e0e;
+    background-color: transparent;
     overflow: hidden;
 }
 
 #title {
     font-family: Rajdhani;
-    color: #fff;
-    font-size: 60px;
+    color: #54adaa;
+    font-size: 80px;
     width: 40%;
     position: relative;
     line-height: 60px;
@@ -121,10 +118,9 @@ body {
 
 #landing {
   position: relative;
-  top: 38%;
+  top: 28%;
   display: block;
   margin-left: 100px;
-
 }
 
 h1 {
@@ -134,7 +130,7 @@ h1 {
   font-size: 30px;
   line-height: 30px;
   display: inline;
-  background-color: #3641FF;
+  background-color: #afc115;
   padding: 2px 10px;
 }
 
@@ -150,7 +146,7 @@ span {
 }
 
 #navigation {
-  margin-top: 40px;
+  margin-top: 20px;
   line-height: 28px;
   font-family: 'radnikamedium_condensed';
   text-transform: uppercase;
@@ -159,7 +155,7 @@ span {
 }
 
 #navigation a {
-  color: #bdbdbd;
+  color: #8a8a8a;
   text-decoration: none;
   margin-right: 20px;
   font-size: 15px;
@@ -168,218 +164,7 @@ span {
 }
 
 #navigation a:hover {
-  color: #FF3593;
-}
-
-/* WORK SECTION */
-#cuair, #sc3, #wicc, #wordworld, #rewriting, #puppetplant, #cornell, #inventure {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    width: 25vw;
-    height: 65vh;
-    margin: -1px -1.5px;
-}
-table img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%) brightness(80%) contrast(90%);
-    opacity: 0.65;
-}
-#cuair img {
-  width: 180%;
-  margin-top: -30%;
-  margin-left: -30%;
-}
-
-#sc3 img, #puppetplant img, #rewriting img, #wordworld img {
-  width: 100%;
-}
-
-#wordworld img {
-  width: 180%;
-  margin-top: -10%;
-  margin-left: -20%;
-}
-
-#wicc img {
-  width: 100%;
-  margin-top: -30%;
-}
-
-#cuair {
-  background-color: #a91400;
-  background: url(../img/cuair3.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-#sc3 {
-  background-color: rgb(39, 109, 154);
-  background: url(../img/sc3.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-#wicc {
-  background-color: #06bf9f;
-  background: url(../img/wicc.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-#puppetplant {
-  background-color: #00B385;
-  background: url(../img/puppetplant.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-#inventure {
-  background-color: #82662f;
-  background: url(../img/inventure.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-#cornell {
-  background-color: #633a3a;
-  background: url(../img/cmsx.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 1;
-}
-
-#cuair:before , #inventure:before,  #cornell:before, #wicc:before  {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right,#757575,#000000);
-  opacity: .6;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-#sc3:before, #puppetplant:before  {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right,#757575,#000000);
-  opacity: .6;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-#cuair:hover:before {
-  background-image: linear-gradient(to bottom right,#ec270c,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-#wicc:hover:before {
-  background-image: linear-gradient(to bottom right,#06bf9f,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#inventure:hover:before {
-  background-image: linear-gradient(to bottom right,#d212f5,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#cornell:hover:before {
-  background-image: linear-gradient(to bottom right,#f51251,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#sc3:hover:before {
-  background-image: linear-gradient(to bottom right,rgb(29, 155, 236),#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#puppetplant:hover:before {
-  background-image: linear-gradient(to bottom right,#00B385,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
+  color: #afc115;
 }
 
 table {
@@ -402,28 +187,22 @@ table {
 
 
 #desc {
-    position: absolute;
     display: block;
-    font-family: Rajdhani;
-    font-weight: 100;
-    font-size: 35px;
-    line-height: 44px;
+    font-family: Helvetica Neue;
+    font-weight: 40000;
+    font-size: 20px;
+    line-height: 30px;
     width: 40%;
     text-align: left;
     opacity: 1;
     top: 0px;
     left: 0px;
-    margin-top: -20px;
-    margin-left: 44%;
-    color: #fff;
+    margin-top: 20px;
+    color: #191919;
 }
-#desc b {
-    color: #7278e4;
-}
-
 #misc {
     font-family: Helvetica Neue;
-    background-color: #254035;
+    background-color: #2c7a76;
     padding: 20% 15%;
     opacity: 1;
     z-index;1
@@ -433,7 +212,7 @@ table {
     font-weight: 100;
 }
 #misc b {
-    color: #1db776;
+    color: #7cf1eb;
     font-weight: 400;
 }
 #misc i {
@@ -472,118 +251,3 @@ h3 {
 }
 
 /* More info */
-
-#info.cuair, #info.cornell, #info.inventure, #info.wicc {
-    position: absolute;
-    background-color: #212121;
-    width: calc(75vw - 100px);
-    height: calc(65vh - 100px);
-    display: block;
-    margin-top: -65vh;
-    z-index: 1;
-    margin-left: 25vw;
-    padding: 0px 50px;
-    font-family: 'Helvetica Neue', Roboto;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 300;
-    opacity: 0;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-    overflow-y: scroll;
-    border-bottom: 50px solid #212121;
-    border-top: 50px solid #212121;
-}
-
-#info h4 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #fff;
-    font-family: 'Monda';
-    line-height: 50px;
-    margin: 0px;
-}
-
-#info i {
-    color: #212121;
-    display: block;
-    font-style: normal;
-    font-weight: 300;
-    font-family: 'Monda';
-    font-size: 14px;
-    background-color: #de617d;
-    display: inline-block;
-    padding: 4px 10px;
-}
-
-.close {
-  position: absolute;
-  right: 40px;
-  z-index: 100;
-}
-
-#cuair.keepCUAir:before {
-  background-image: linear-gradient(to bottom right,#a91400,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#cornell.keepCornell:before {
-  background-image: linear-gradient(to bottom right,#f51251,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#inventure.keepInventure:before {
-  background-image: linear-gradient(to bottom right,#d212f5,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#wicc.keepWICC:before {
-  background-image: linear-gradient(to bottom right,#06bf9f,#000000);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.6;
-}
-
-#info b {
-    font-weight: 300;
-    font-style: italic;
-    color: #e2e2e2;
-}
-
-#info p::before {
-    content: "----";
-    margin-right: 10px;
-    font-weight: 300;
-    font-size: 12px;
-}
-
-.backgroundOverlay {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: auto;
-    top: 0px;
-    left: 0px;
-}

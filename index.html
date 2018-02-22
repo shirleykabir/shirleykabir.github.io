@@ -21,64 +21,13 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:400,700|Ubuntu:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:100,300,400,400i,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap|Gudea|Karla|Playfair+Display|Rajdhani|Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Hind+Siliguri|Pathway+Gothic+One" rel="stylesheet">
 
     <!--[endif]---->
     <script>
         $(function() {
-            $("#info.cornell").hide();
-            $("#info.cuair").hide();
-            $("#info.wicc").hide();
-            $("#info.inventure").hide();
-            $('#main').addClass('backgroundOverlay');
+            // $('#main').addClass('backgroundOverlay');
         });
-
-        function openCUAirInfo() {
-            $("#info.cuair").show("fast");
-            $("#info.cuair").animate({ "opacity": "1"}, "slow" );
-            $('#cuair').addClass('keepCUAir');
-        }
-        function closeCUAirInfo() {
-            $("#cuair" ).animate({ "margin-left": "0"}, "slow" );
-            $( "#info.cuair").animate({ "opacity": "0"}, "slow" );
-            $( "#info.cuair").delay(500).hide( "slow");
-            $('#cuair').removeClass('keepCUAir');
-        }
-        function openCornellInfo() {
-            $("#info.cornell").show("fast");
-            $("#info.cornell").animate({ "opacity": "1"}, "slow" );
-            $('#cornell').addClass('keepCornell');
-            $("#cornell" ).delay(1500).animate({ "margin-left": "-25vw"}, "slow" );
-        }
-        function closeCornellInfo() {
-            $("#cornell" ).animate({ "margin-left": "0"}, "slow" );
-            $( "#info.cornell").animate({ "opacity": "0"}, "slow" );
-            $( "#info.cornell").delay(500).hide( "slow");
-            $('#cornell').removeClass('keepCornell');
-        }
-        function openInventureInfo() {
-            $("#info.inventure" ).show("fast");
-            $("#info.inventure" ).animate({ "opacity": "1"}, "slow" );
-            $('#inventure').addClass('keepInventure');
-            $("#inventure" ).delay(1500).animate({ "margin-left": "-50vw"}, "slow" );
-        }
-        function closeInventureInfo() {
-            $("#inventure" ).animate({ "margin-left": "0"}, "slow" );
-            $("#info.inventure").animate({ "opacity": "0"}, "slow" );
-            $("#info.inventure").delay(500).hide( "slow");
-            $('#inventure').removeClass('keepInventure');
-        }
-        function openWICCInfo() {
-            $("#info.wicc" ).show("fast");
-            $("#info.wicc" ).animate({ "opacity": "1"}, "slow" );
-            $('#wicc').addClass('keepWICC');
-            $("#wicc" ).delay(1500).animate({ "margin-left": "-75vw"}, "slow" );
-        }
-        function closeWICCInfo() {
-            $("#wicc" ).animate({ "margin-left": "0"}, "slow" );
-            $("#info.wicc").animate({ "opacity": "0"}, "slow" );
-            $("#info.inventure").delay(500).hide( "slow");
-            $('#wicc').removeClass('keepWICC');
-        }
         function randomizeQuote() {
           var quotes = ["“We hold ourselves back in ways both big and small, by lacking self-confidence, by not raising our hands, and by pulling back when we should be <b>leaning in</b>.” <i>Sherl Sandberg</i>", "“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>”  <i>Michelle Obama</i>", "“Life is a series of building, testing, changing and iterating.” <i>Lauren Mosenthal (Glassbreakers CEO)</i>", "“Do not ever let <b>anyone</b> make you feel like you don't matter, or like you don't have a place in our American story -- because you do. And you have the right to be exactly who you are.</b>”  <i>Michelle Obama</i>"];
           var rand = Math.floor((Math.random() * (quotes.length-1)));
@@ -97,16 +46,16 @@
         <div id="landing">
             <div id="title">Shirley Kabir</div>
             <h1>girl coder.</h1>
+            <div id="desc">
+                A computer science student @ Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to the art of code. And also, very surprisingly, enjoys cooking and finding aesthetic study spaces.
+            </div>
             <div id="navigation">
                 <a href="#" id="work_link">work</a>
                 <a href="#" id="proj_link">projects</a>
+                <a href="#" id="misc_link">misc</a>
                 <a href="resume_feb.pdf" target="_blank">resume</a>
                 <a href="https://github.com/shirleykabir">github</a>
                 <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
-            </div>
-            <div id="desc">
-                Hi. I'm Shirley<br>
-                A Computer Science Student with a main focus on combining aspects of Machine Learning, Data Science, and/or Security to help other people and/or communities.
             </div>
         </div>
     </div>
@@ -115,77 +64,10 @@
     </div>
     <div id="work">
         <h2>Work Experience</h2>
-        <h3>Current</h3>
-        <table>
-            <tr>
-                <td>
-                    <div id="cuair" onclick="openCUAirInfo()">
-                        <div class="title">CUAir</div>
-                    </div>
-                </td>
-                <td>
-                    <div id="cornell" onclick="openCornellInfo()">
-                        <div class="title">Cornell CMSX</div>
-                    </div>
-                </td>
-                <td>
-                    <div id="inventure" onclick="openInventureInfo()">
-                        <div class="title">InVenture+</div>
-                    </div>
-                </td>
-                <td>
-                    <div id="wicc" onclick="openWICCInfo()">
-                        <div class="title">WICC</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div id="expand">
-            <div id="info" class="cuair">
-                <div class="close" onclick="closeCUAirInfo()">close</div>
-                <h4>Cornell University Unmanned Air Systems</h4>
-                <i>Business Team Member \\ Website Lead</i><br><br>
-            <b>CUAir is an undergraduate research group that develops an autonomous unmanned aircraft that is capable of takeoff, landing, waypoint navigation, and object recognition and classification. CUAir is the top undergraduate unmanned aerial systems (UAS) team in the United States and competes in the Association for Unmanned Vehicle Systems International (AUVSI) annual Student Unmanned Air Systems (SUAS) competition against over 50 different teams from all across the world including India, Canada, and Israel.</b>
-            <p>Began the design and development process of the current website (cuair.org) as of March 2017, and continuing to manage the website and update profiles.</p>
-            <p>Constantly updating the website to incorporate new technologies, incorporate more information about the team, and display the work done by each individual.</p>
-            <p>On the business team, also responsible for organizing social events, exposing the engineering world to younger audiences, such as high schoolers and middle schoolers, and informing the Ithaca community of our work, and application of our classroom skills into real world development.</p>
-            </div>
-            <div id="info" class="cornell">
-                <div class="close" onclick="closeCornellInfo()">close</div>
-                <h4>Cornell CMSX</h4>
-                <i>Software Developer</i><br><br>
-            <b>\\ About Cornell CMSX</b>
-            <p>\\ About position at Cornell CMSX</p></div>
-            <div id="info" class="inventure">
-                <div class="close" onclick="closeInventureInfo()">close</div>
-                <h4>inVenture+</h4>
-                <i>Full Stack Developer</i><br><br>
-            <b>\\ About inVenture+</b>
-            <p>\\ About position at inVenture+</p></div>
-            <div id="info" class="wicc">
-                <div class="close" onclick="closeWICCInfo()">close</div>
-                <h4>Women in Computing at Cornell</h4>
-                <i>Secretary</i><br><br>
-            <b>\\ About WICC</b>
-            <p>\\ About position at WICC</div>
+        <div class="cuair">
+          <a href=""></a>
         </div>
 
-
-        <h3>Past</h3>
-        <table>
-            <tr>
-                <td>
-                    <div id="sc3">
-                        <div class="title">SC3</div>
-                    </div>
-                </td>
-                <td>
-                    <div id="puppetplant">
-                        <div class="title">Puppet Plant</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
     </div>
     <div id="projects">
         <h2>Projects</h2>
