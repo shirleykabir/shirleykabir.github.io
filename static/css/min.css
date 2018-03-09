@@ -1,119 +1,110 @@
 @font-face {
-    font-family: 'denseregular';
-    src: url('../../fonts/fonts/dense-regular-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/dense-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'denseregular';
+  src: url('../../fonts/fonts/dense-regular-webfont.woff2') format('woff2'), url('../../fonts/fonts/dense-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'momobomedium';
-    src: url('../../fonts/fonts/momobo-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/momobo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'momobomedium';
+  src: url('../../fonts/fonts/momobo-webfont.woff2') format('woff2'), url('../../fonts/fonts/momobo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'qanelas_soft_demoextrabold';
-    src: url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'qanelas_soft_demoextrabold';
+  src: url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff2') format('woff2'), url('../../fonts/fonts/qanelassoftdemo-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'qanelas_soft_demoultralight';
-    src: url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'qanelas_soft_demoultralight';
+  src: url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff2') format('woff2'), url('../../fonts/fonts/qanelassoftdemo-ultralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'qontraregular';
-    src: url('../../fonts/fonts/qontra-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/qontra-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'qontraregular';
+  src: url('../../fonts/fonts/qontra-webfont.woff2') format('woff2'), url('../../fonts/fonts/qontra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'radnikamedium';
-    src: url('../../fonts/fonts/radnika-medium-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/radnika-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'radnikamedium';
+  src: url('../../fonts/fonts/radnika-medium-webfont.woff2') format('woff2'), url('../../fonts/fonts/radnika-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'radnikamedium_condensed';
-    src: url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'radnikamedium_condensed';
+  src: url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff2') format('woff2'), url('../../fonts/fonts/radnika-mediumcondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'simplificasimplifica';
-    src: url('../../fonts/fonts/simplifica_typeface-webfont.woff2') format('woff2'),
-         url('../../fonts/fonts/simplifica_typeface-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'simplificasimplifica';
+  src: url('../../fonts/fonts/simplifica_typeface-webfont.woff2') format('woff2'), url('../../fonts/fonts/simplifica_typeface-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: #fefefe;
-    color: #fff;
+  background-color: #fefefe;
+  color: #000;
 }
 
 #main {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  overflow: hidden;
+  color: #fff;
 }
 
 #main::before {
-    content: "";
-    background: url(../img/me.jpg);
-    background-size: 120%;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    background-position: -40% 75%;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
-
+  content: "";
+  background: url(../img/me.jpg);
+  background-size: 120%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-position: -40% 75%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
 
-#work {
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    overflow: hidden;
+#what_i_do {
+  display: block;
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  color: #000;
+  padding-bottom: 30px;
 }
 
 #title {
-    font-family: Rajdhani;
-    color: #54adaa;
-    font-size: 80px;
-    width: 40%;
-    position: relative;
-    line-height: 60px;
-    margin-top: -20px;
-    margin-bottom: 40px;
+  font-family: Rajdhani;
+  color: #54adaa;
+  font-size: 80px;
+  width: 40%;
+  position: relative;
+  line-height: 60px;
+  margin-top: -20px;
+  margin-bottom: 40px;
 }
 
 #landing {
@@ -173,7 +164,7 @@ table {
 }
 
 .title {
-  position:absolute;
+  position: absolute;
   font-family: 'Helvetica Neue', 'Roboto';
   z-index: 1;
   text-align: left;
@@ -185,69 +176,290 @@ table {
   text-transform: uppercase;
 }
 
-
 #desc {
-    display: block;
-    font-family: Helvetica Neue;
-    font-weight: 40000;
-    font-size: 20px;
-    line-height: 30px;
-    width: 40%;
-    text-align: left;
-    opacity: 1;
-    top: 0px;
-    left: 0px;
-    margin-top: 20px;
-    color: #191919;
+  display: block;
+  font-family: Helvetica Neue;
+  font-weight: 40000;
+  font-size: 20px;
+  line-height: 30px;
+  width: 40%;
+  text-align: left;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  margin-top: 20px;
+  color: #191919;
 }
+
 #misc {
-    font-family: Helvetica Neue;
-    background-color: #2c7a76;
-    padding: 20% 15%;
-    opacity: 1;
-    z-index;1
-    padding: 20% 15%;
-    font-size: 34px;
-    line-height: 60px;
-    font-weight: 100;
+  font-family: Helvetica Neue;
+  background-color: #2c7a76;
+  padding: 20% 15%;
+  opacity: 1;
+  z-index;
+  1 padding: 20% 15%;
+  font-size: 34px;
+  line-height: 60px;
+  font-weight: 100;
 }
+
 #misc b {
-    color: #7cf1eb;
-    font-weight: 400;
+  color: #7cf1eb;
+  font-weight: 400;
 }
+
 #misc i {
-    display: block;
-    text-align: center;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #bdbdbd;
-    font-size: 18px;
+  display: block;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-size: 18px;
 }
 
 h2 {
-    font-family: 'Monda';
-    font-weight: 300;
-    font-size: 40px;
-    margin-bottom: -15px;
-    padding-left: 65px;
+  font-family: 'Rajdhani';
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding-left: 65px;
 }
+
 h2::before {
-    content: "";
-    border-top: 1px solid #fff;
-    width: 50px;
-    display: block;
-    margin-top: 30px;
-    margin-left: -60px;
-    position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  width: 50px;
+  display: block;
+  margin-top: 30px;
+  margin-left: -60px;
+  position: absolute;
 }
+
 h3 {
-    font-family: 'Helvetica Neue', 'Monda';
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 20px;
-    padding-left: 10px;
-    color: #3a9c73;
+  font-family: 'Helvetica Neue', 'Rajdhani';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #3a9c73;
+}
+
+.quote {
+  color: #fff;
 }
 
 /* More info */
+/*
+#cuair, #cmsx {
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+}
+
+#cuair::before {
+  content: "";
+  background: url(../img/cuair.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 200px;
+  background-position: -70% 90%;
+  position: absolute;
+  display: block;
+  display: inline-block;
+  z-index: -1;
+  margin-top: -150px;
+  margin-left: -35px;
+}
+
+#cuair::after {
+  content: "";
+  background-color: #3a0000;
+  width: 500px;
+  height: 200px;
+  background-position: -70% 90%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  margin-top: -170px;
+  opacity: 0.5;
+  margin-left: -35px;
+}
+
+a#cuair {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fefefe;
+  width: auto;
+  background-color: transparent;
+  height: auto;
+  font-weight: bold;
+  display: inline-block;
+  border: 2px solid #fefefe;
+  padding: 10px 20px;
+  line-height: 20px;
+  z-index: 1;
+  margin: 10px;
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+#cmsx::before {
+  content: "";
+  background: url(../img/gates1.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 200px;
+  background-position: -70% 90%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  margin-top: -150px;
+  margin-left: -40px;
+}
+
+#cmsx::after {
+  content: "";
+  background-color: #01003a;
+  width: 500px;
+  height: 200px;
+  background-position: -70% 90%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  opacity: 0.5;
+  margin-top: -170px;
+  margin-left: -40px;
+}
+
+a#cmsx {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fefefe;
+  width: auto;
+  background-color: transparent;
+  height: auto;
+  font-weight: bold;
+  display: inline-block;
+  border: 2px solid #fefefe;
+  padding: 10px 20px;
+  line-height: 20px;
+  z-index: 1;
+  margin: 10px;
+  margin-top: -54px;
+  margin-left: 540px;
+}
+
+.current, .past {
+  background-color: #ffffff5e;
+  padding: 30px 20px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid #ffffff85;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.current h3, .past h3 {
+  font-family: Rajdhani;
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  text-transform: initial;
+}
+
+.content {
+  height: inherit;
+  width: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#what_i_do p {
+  border-radius: 4px;
+  width: 80px;
+  font-family: Rajdhani;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 3px;
+  position: absolute;
+  margin-top: 0px;
+}
+p#past, p#current {
+  margin-left: 90px;
+}
+p#projectteam {
+  background-color: #33c15b66;
+  border: 1px solid #33c15ba6;
+}
+p#organization {
+  background-color: #5933c166;
+  border: 1px solid #5933c1a6;
+}
+p#current {
+  background-color: #c1333d66;
+  border: 1px solid #c1333da6;
+}
+p#past {
+  background-color: #c1983366;
+  border: 1px solid #c19833a6;
+}
+p#company {
+  background-color: #c17e3366;
+  border: 1px solid #c17e33a6;
+}
+p#project {
+  background-color: #c17e3366;
+  border: 1px solid #c17e33a6;
+} */
+
+.where img {
+  width: 100px;
+}
+.where {
+  width: 23%;
+  text-align: center;
+  display: inline-block;
+  padding: 5%;
+}
+.where h3 {
+  font-family: 'Rajdhani';
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #94a20c;
+  font-size: 30px;
+}
+
+#work, #projects, #orgs {
+  padding: 3%;
+  width: 94%;
+  background-color: #ffffff;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+}
+
+.wicc, .cuair {
+height: 300px;
+padding-bottom: 20px;
+}
+#content h3 {
+  font-family:'Rajdhani';
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px;
+  color: #000;
+  text-transform: none;
+}
+#content img {
+  margin: 10px 0px;
+  box-shadow: 0px 3px 3px 0px #9090907d;
+}

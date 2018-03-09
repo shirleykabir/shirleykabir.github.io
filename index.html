@@ -1,77 +1,101 @@
-<html lang="en"><head>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
 
-    <title>Shirley Kabir</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link rel="icon" type="image/png" href="img/tabicon.png">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/resolution.css" rel="stylesheet">
-    <link href="static/css/min.css" rel="stylesheet">
-    <script src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/other.js"></script>
+  <title>Shirley Kabir</title>
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:400,700|Ubuntu:400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:100,300,400,400i,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Asap|Gudea|Karla|Playfair+Display|Rajdhani|Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Hind+Siliguri|Pathway+Gothic+One" rel="stylesheet">
+  <link href="static/css/min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/other.js"></script>
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:400,700|Ubuntu:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:100,300,400,400i,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Gudea|Karla|Playfair+Display|Rajdhani|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Hind+Siliguri|Pathway+Gothic+One" rel="stylesheet">
 
-    <!--[endif]---->
-    <script>
-        $(function() {
-            // $('#main').addClass('backgroundOverlay');
-        });
-        function randomizeQuote() {
-          var quotes = ["“We hold ourselves back in ways both big and small, by lacking self-confidence, by not raising our hands, and by pulling back when we should be <b>leaning in</b>.” <i>Sherl Sandberg</i>", "“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>”  <i>Michelle Obama</i>", "“Life is a series of building, testing, changing and iterating.” <i>Lauren Mosenthal (Glassbreakers CEO)</i>", "“Do not ever let <b>anyone</b> make you feel like you don't matter, or like you don't have a place in our American story -- because you do. And you have the right to be exactly who you are.</b>”  <i>Michelle Obama</i>"];
-          var rand = Math.floor((Math.random() * (quotes.length-1)));
-          document.getElementsByClassName("quote")[0].innerHTML = quotes[rand];
-        }
-        window.onload = randomizeQuote;
+  <!--[endif]---->
+  <script>
+    $(function() {
+      // $('#main').addClass('backgroundOverlay');
+    });
 
-    </script>
+    function randomizeQuote() {
+      var quotes = ["“We hold ourselves back in ways both big and small, by lacking self-confidence, by not raising our hands, and by pulling back when we should be <b>leaning in</b>.” <i>Sherl Sandberg</i>",
+        "“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>”  <i>Michelle Obama</i>", "“Life is a series of building, testing, changing and iterating.” <i>Lauren Mosenthal (Glassbreakers CEO)</i>",
+        "“Do not ever let <b>anyone</b> make you feel like you don't matter, or like you don't have a place in our American story -- because you do. And you have the right to be exactly who you are.</b>”  <i>Michelle Obama</i>"
+      ];
+      var rand = Math.floor((Math.random() * (quotes.length - 1)));
+      document.getElementsByClassName("quote")[0].innerHTML = quotes[rand];
+    }
+    window.onload = randomizeQuote;
+  </script>
 
 </head>
 
 <body>
 
-    <div id="full">
+  <div id="full">
     <div id="main">
-        <div id="landing">
-            <div id="title">Shirley Kabir</div>
-            <h1>girl coder.</h1>
-            <div id="desc">
-                A computer science student @ Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to the art of code. And also, very surprisingly, enjoys cooking and finding aesthetic study spaces.
-            </div>
-            <div id="navigation">
-                <a href="#" id="work_link">work</a>
-                <a href="#" id="proj_link">projects</a>
-                <a href="#" id="misc_link">misc</a>
-                <a href="resume_feb.pdf" target="_blank">resume</a>
-                <a href="https://github.com/shirleykabir">github</a>
-                <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
-            </div>
+      <div id="landing">
+        <div id="title">Shirley Kabir</div>
+        <h1>girl coder.</h1>
+        <div id="desc">
+          A computer science student @ Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to the art of code. And also, very surprisingly, enjoys cooking and finding aesthetic
+          study spaces.
         </div>
+        <div id="navigation">
+          <a href="resume_feb.pdf" target="_blank">resume</a>
+          <a href="https://github.com/shirleykabir">github</a>
+          <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
+        </div>
+        <br />
+      </div>
     </div>
     <div id="misc">
-        <div class="quote"></div>
+      <div class="quote"></div>
     </div>
-    <div id="work">
-        <h2>Work Experience</h2>
-        <div class="cuair">
-          <a href=""></a>
+    <div id="what_i_do">
+      <h2>What I've Done So Far</h2>
+      <div id="where_to_go">
+        <div class="where projects_link">
+          <img src="static/img/logos/projects.svg" />
+          <h3>Projects</h3>
         </div>
+        <div class="where orgs_link">
+          <img src="static/img/logos/team.png" />
+          <h3>Organizations</h3>
+        </div>
+        <div class="where work_link">
+          <img src="static/img/logos/work.png" />
+          <h3 class="work_link">Work/Internships</h3>
+        </div>
+      </div>
+      <div id="content">
+        <div id="projects">
 
-    </div>
-    <div id="projects">
-        <h2>Projects</h2>
-    </div>
+        </div>
+        <div id="orgs">
+          <div class="cuair">
+            <img src="static/img/cuair_business.jpeg" height="300" style="float: right;" />
+            <h3>CUAir - Cornell University Unmanned Air Systems</h3>
+          </div>
+          <div class="wicc">
+            <img src="static/img/wicc_photo.jpg" height="300" style="float: left;" />
+            <h3>WICC - Women in Computing at Cornell</h3>
+          </div>
+        </div>
+        <div id="work">
+          3453252swtuff here
+        </div>
+      </div>
 
 
     </div>
@@ -79,4 +103,47 @@
     <!-- jQuery -->
 
 
-</body></html>
+</body>
+<script>
+  // var elements = document.getElementsByClassName("current");
+  // console.log(elements);
+  // for(var i = 0; i<elements.length; i++) {
+  //   elements[i].style.display = 'none';
+  //   console.log(elements[i]);
+  // }
+  // $(".past").append("<p id='past'>past</p>");
+  // $(".current").append("<p id='current'>current</p>");
+  // $(".company").append("<p id='company'>company</p>");
+  // $(".organization").append("<p id='organization'>organization</p>");
+  // $(".projectteam").append("<p id='projectteam'>project team</p>");
+  // $(".project").append("<p id='project'>project</p>");
+  $("#orgs").hide();
+  $("#work").hide();
+  $("#projects").hide();
+  $(".projects_link").click(function() {
+    // Holds the product ID of the clicked element
+    $("#projects").show("slow", function() {
+      // Animation complete.
+    });
+    $("#orgs").hide();
+    $("#orgs").hide();
+  });
+  $(".orgs_link").click(function() {
+    // Holds the product ID of the clicked element
+    $("#orgs").show("slow", function() {
+      // Animation complete.
+    });
+    $("#work").hide();
+    $("#projects").hide();
+  });
+  $(".work_link").click(function() {
+    // Holds the product ID of the clicked element
+    $("#work").show("slow", function() {
+      // Animation complete.
+    });
+    $("#orgs").hide();
+    $("#projects").hide();
+  });
+</script>
+
+</html>
