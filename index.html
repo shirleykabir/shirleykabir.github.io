@@ -46,7 +46,7 @@
     <div id="main">
       <div id="landing">
         <div id="title">Shirley Kabir</div>
-        <h1>girl coder.</h1>
+        <h1>girl coder.<span aria-hidden="true"></span></h1>
         <div id="desc">
           A computer science student @ Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to the art of code. And also, very surprisingly, enjoys cooking and finding aesthetic
           study spaces.
@@ -56,44 +56,74 @@
           <a href="https://github.com/shirleykabir">github</a>
           <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
         </div>
-        <br />
+        <br>
       </div>
     </div>
     <div id="misc">
-      <div class="quote"></div>
+      <div class="quote">“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>” <i>Michelle Obama</i></div>
     </div>
     <div id="what_i_do">
       <h2>What I've Done So Far</h2>
       <div id="where_to_go">
         <div class="where projects_link">
-          <img src="static/img/logos/projects.svg" />
+          <img src="static/img/logos/projects.svg">
           <h3>Projects</h3>
         </div>
         <div class="where orgs_link">
-          <img src="static/img/logos/team.png" />
+          <img src="static/img/logos/team.png">
           <h3>Organizations</h3>
         </div>
         <div class="where work_link">
-          <img src="static/img/logos/work.png" />
+          <img src="static/img/logos/work.png">
           <h3 class="work_link">Work/Internships</h3>
         </div>
       </div>
       <div id="content">
-        <div id="projects">
-
+        <div id="projects" style="display: block;">
+          <div class="travelnode">
+            <div class="macbook" style="float: right; right: 0px; smargin-right: -300px">
+              <img src="static/img/macbookpro2.png" width="900" class="mac" style="float: right; margin-right: -300px;">
+              <img src="static/img/travelNodescreen.png" style="float: right; margin-top: 74px; margin-left: 155px; position: absolute;" width="590">
+            </div>
+            <div class="desc">
+              <h4>travelNode</h4>
+              <h6>Developer</h6>
+            </div>
+          </div>
         </div>
-        <div id="orgs">
+        <div id="orgs" style="display: none;">
           <div class="cuair">
+            <img src="static/img/cuairwebsite.png" width="900" style="float: right; margin-right: -300px">
+            <div class="desc">
+              <h4>Cornell University Unmanned Air Systems</h4>
+              <h6>Website and Outreach Lead</h6>
+            </div>
+          </div>
+          <div class="wicc">
+            <img src="static/img/wicc_total.jpg" width="700" style="float: left; margin-left: -60px">
+            <div class="desc right">
+              <h4>Women in Computing at Cornell</h4>
+              <h6>Advisor</h6>
+            </div>
+          </div>
+          <!-- <div class="cuair">
             <img src="static/img/cuair_business.jpeg" height="300" style="float: right;" />
             <h3>CUAir - Cornell University Unmanned Air Systems</h3>
           </div>
           <div class="wicc">
             <img src="static/img/wicc_photo.jpg" height="300" style="float: left;" />
             <h3>WICC - Women in Computing at Cornell</h3>
-          </div>
+          </div> -->
         </div>
-        <div id="work">
-          3453252swtuff here
+        <div id="work" style="display: none;">
+          <!-- <div class="sc3">
+              <img src="static/img/sc3.jpg" height="300" style="float: right;" />
+              <h3>Software Development and Engineering Intern</h3>
+            </div>
+            <div class="puppetplant">
+              <img src="static/img/puppetplant.png" height="300" style="float: left;" />
+              <h3>Front End Development Intern</h3>
+            </div> -->
         </div>
       </div>
 
@@ -103,47 +133,50 @@
     <!-- jQuery -->
 
 
-</body>
-<script>
-  // var elements = document.getElementsByClassName("current");
-  // console.log(elements);
-  // for(var i = 0; i<elements.length; i++) {
-  //   elements[i].style.display = 'none';
-  //   console.log(elements[i]);
-  // }
-  // $(".past").append("<p id='past'>past</p>");
-  // $(".current").append("<p id='current'>current</p>");
-  // $(".company").append("<p id='company'>company</p>");
-  // $(".organization").append("<p id='organization'>organization</p>");
-  // $(".projectteam").append("<p id='projectteam'>project team</p>");
-  // $(".project").append("<p id='project'>project</p>");
-  $("#orgs").hide();
-  $("#work").hide();
-  $("#projects").hide();
-  $(".projects_link").click(function() {
-    // Holds the product ID of the clicked element
-    $("#projects").show("slow", function() {
-      // Animation complete.
-    });
-    $("#orgs").hide();
-    $("#orgs").hide();
-  });
-  $(".orgs_link").click(function() {
-    // Holds the product ID of the clicked element
-    $("#orgs").show("slow", function() {
-      // Animation complete.
-    });
-    $("#work").hide();
-    $("#projects").hide();
-  });
-  $(".work_link").click(function() {
-    // Holds the product ID of the clicked element
-    $("#work").show("slow", function() {
-      // Animation complete.
-    });
-    $("#orgs").hide();
-    $("#projects").hide();
-  });
-</script>
 
+    <script>
+      // var elements = document.getElementsByClassName("current");
+      // console.log(elements);
+      // for(var i = 0; i<elements.length; i++) {
+      //   elements[i].style.display = 'none';
+      //   console.log(elements[i]);
+      // }
+      // $(".past").append("<p id='past'>past</p>");
+      // $(".current").append("<p id='current'>current</p>");
+      // $(".company").append("<p id='company'>company</p>");
+      // $(".organization").append("<p id='organization'>organization</p>");
+      // $(".projectteam").append("<p id='projectteam'>project team</p>");
+      // $(".project").append("<p id='project'>project</p>");
+      $("#orgs").hide();
+      $("#work").hide();
+      $("#projects").hide();
+      $(".projects_link").click(function() {
+        // Holds the product ID of the clicked element
+        $("#projects").show("slow", function() {
+          // Animation complete.
+        });
+        $("#orgs").hide();
+        $("#orgs").hide();
+      });
+      $(".orgs_link").click(function() {
+        // Holds the product ID of the clicked element
+        $("#orgs").show("slow", function() {
+          // Animation complete.
+        });
+        $("#work").hide();
+        $("#projects").hide();
+      });
+      $(".work_link").click(function() {
+        // Holds the product ID of the clicked element
+        $("#work").show("slow", function() {
+          // Animation complete.
+        });
+        $("#orgs").hide();
+        $("#projects").hide();
+      });
+    </script>
+
+
+  </div>
+</body>
 </html>
