@@ -57,6 +57,8 @@
 body {
   background-color: #fefefe;
   color: #000;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #main {
@@ -493,6 +495,18 @@ p#project {
   letter-spacing: 0px;
   color: #828e13;
   font-style: italic;
+  padding: 0px;
+  line-height: 30px;
+  margin-top: 20px;
+  margin:  0px;
+  margin-top: 30px;
+}
+.desc h7 {
+  font-family: 'qanelas_soft_demoultralight';
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #aaa;
+  line-height: 30px;
 }
 
 .desc.right {
