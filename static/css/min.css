@@ -498,9 +498,10 @@ p#project {
   padding: 0px;
   line-height: 30px;
   margin-top: 20px;
-  margin:  0px;
+  margin: 0px;
   margin-top: 30px;
 }
+
 .desc h7 {
   font-family: 'qanelas_soft_demoultralight';
   font-size: 16px;
@@ -512,4 +513,66 @@ p#project {
 .desc.right {
   display: relative;
   padding-left: 700px;
+}
+
+/* skills */
+
+/* frontend {
+  font-family: "Rubik";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  color: #ffffff;
+  height: 80px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 5px;
+  border-width: 3px;
+  background-image: linear-gradient(to right, #41a3b7d4 0%, #00a41950 100%);
+} */
+
+/* backend {
+  font-family: "Rubik";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  color: #ffffff;
+  height: 80px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 5px;
+  border-width: 3px;
+  background-image: linear-gradient(to right, #b7ab4150 0%, #b74141d1 100%);
+} */
+
+development, frontend, backend {
+  font-family: "Rubik";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  color: #aaa;
+  height: 80px;
+  padding: 6px 14px;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0px 5px;
+  border-width: 3px;
+  border: 2px solid #aaa;
+}
+frontend {
+  border-color: #41a3b7d4;
+  color: #41a3b7d4;
+}
+backend {
+  border-color: #b74141d1;
+  color: #b74141d1;
+}
+other {
+  border-color: #00a41950;
+  color: #00a41950;
 }
