@@ -1,0 +1,399 @@
+body {
+  background-color: #afb7b529;
+  font-family: 'Overpass';
+}
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  overflow: hidden;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #f3f2f0 0%, #eaeaea 100%);
+}
+
+#landing::before {
+  content: "";
+  background: url(../img/me.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-position: 75% 100%;
+  right: -20%;
+  top: 0px;
+  z-index: -1;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+#quotes {
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  padding: 25%; //
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #105a45, #095652, #09415a, #082156);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  font-family: 'Space Mono';
+}
+
+.quote i {
+    display: block;
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 100;
+    font-style: normal;
+    /* text-transform:  uppercase; */
+}
+
+.quote {
+    font-style: italic;
+    font-size: 20px;
+    /* color: black; */
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* organizations */
+
+#organizations {
+  width: 100vw;
+}
+
+.item {
+  padding: 10vh; //background-color: #afb7b529;
+  height: 80vh;
+  width: calc(100vw - 20vh);
+}
+
+.left .side_image {
+  left: 0vw;
+}
+
+.right .side_image {
+  left: 60vw;
+}
+
+.left .desc {
+  margin-left: 60vw;
+  text-align: right;
+}
+
+.right .company {
+  text-align: right;
+  margin-left: 340px;
+}
+
+.left .company {
+  text-align: left;
+  margin-left: 540px;
+}
+
+.right .company::after {
+  content: "---------------";
+  font-family: Times;
+  letter-spacing: -2.5px;
+  position: relative;
+  top: -50px;
+  left: 100px;
+  display: block;
+}
+
+.left .company::before {
+  content: "---------------";
+  font-family: Times;
+  letter-spacing: -2.5px;
+  position: relative;
+  top: 30px;
+  left: -100px;
+  display: block;
+}
+.right .browser {
+  margin-left: 40vw;
+}
+.left .browser {
+  margin-left: 20vw;
+}
+
+.side_image {
+  width: 40vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -10vh;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.side_image img {
+  height: 100vh;
+  left: -30%;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.browser {
+  z-index: 10;
+  position: absolute;
+  margin-left: 40vw;
+  margin-top: 30vh;
+}
+
+.browser img {
+  width: 500px;
+  box-shadow: 0px 0px 10px 0px #0000006b;
+}
+
+.need_border {
+  background-image: url(../img/frame.png);
+  padding-top: 20px;
+  background-size: 500px;
+}
+
+.company {
+  text-align: right;
+  width: 400px;
+  font-family: Overpass;
+  font-weight: 900;
+  position: relative;
+  z-index: 1;
+  color: #0c3ba0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.desc {
+  position: relative;
+  font-family: 'Overpass';
+  width: 30vw;
+  margin-top: 6vh;
+  font-weight: 100;
+}
+
+.desc b {
+  color: #0bca93;
+  margin-bottom: 30px;
+  display: block;
+  font-weight: 600;
+}
+
+.desc a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  color: #0851ef;
+  display: block;
+  margin-top: 40px;
+}
+
+/* Overall Styles */
+h5 {
+    font-family: 'Space Mono';
+    font-weight: 100;
+    font-size: 12px;
+    margin: 0px;
+    width: 60vw;
+    text-align: center;
+    /* margin-left: 10vw; */
+    margin-left: 20vw;
+    margin-top: -30px;
+    color: #0851ef;
+}
+
+h3 {
+  font-family: 'Space Mono';
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  color: #afb7b5;
+}
+
+h2 {
+  font-family: 'Space Mono';
+  font-weight: 100;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: 'Space Mono';
+  font-size: 26px;
+  color: #8ca59e; //background-color: #afb7b5;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+#inner {
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 100;
+  color: #000;
+  font-family: 'Overpass';
+  width: 40vw;
+  padding: 100px;
+}
+
+#inner .nav {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.nav a {
+  display: block;
+  text-align: left;
+  font-weight: 900;
+  text-decoration: none;
+  color: #afb7b57d;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.nav a:hover {
+  color: #16e0d6;
+}
+
+.overhead {
+  position: absolute;
+  left: 67%;
+  text-align: center;
+  top: 6%;
+  width: 300px;
+}
+
+/* Skills */
+.skills {
+    position: relative;
+    margin-top:  10px;
+    margin-left: -10px;
+}
+
+development, frontend, backend, other {
+  font-family: 'Space Mono';
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  //border-radius: 6px;
+  color: #aaa;
+  //height: 80px;
+  line-height: 10px;
+  margin: 5px 10px;
+  //text-transform: lowercase;
+  //text-align: center;
+  //border-width: 3px;
+  //border: 2px solid #aaa;
+  display: inline-block;
+}
+
+/* frontend {
+  border-color: #16e0d6d4;
+  color: #16e0d6d4;
+}
+
+backend {
+  border-color: #16e082d1;
+  color: #16e082d1;
+}
+
+development {
+  border-color: #167ae0d4;
+  color: #167ae0d4;
+}
+
+other {
+  border-color: #3416e0d4;
+  color: #3416e0d4;
+} */
+
+/* Work */
+.work_inner {
+    padding: 20px 30%;
+}
+
+.less {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform:  uppercase;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.more {
+    position: relative;
+    margin-top: -20px;
+    left: 170px;
+}
+.work_inner .skills {
+    position: relative;
+    left: 170px;
+    width: 100%;
+}
+
+/* Cornell */
+.school_right h4 {
+    font-family: 'Space Mono';
+    text-align: left;
+    float: left;
+    display: inline;
+    font-size: 20px;
+
+}
+#cornell {
+    height: 400px;
+    font-size: 14px;
+
+}
+#cornell img {
+    float: left;
+    margin-right: 20px;
+}

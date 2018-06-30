@@ -1,233 +1,252 @@
+<!doctype html>
+
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
   <title>Shirley Kabir</title>
+  <meta name="description" content="Shirley Kabir's personal website">
+  <meta name="author" content="Shirley Kabir">
 
-  <link href="static/css/min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
   <script src="js/javascript.js"></script>
   <script src="js/other.js"></script>
-  <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:400,700|Ubuntu:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:100,300,400,400i,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Asap|Gudea|Karla|Playfair+Display|Rajdhani|Roboto+Mono" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Hind+Siliguri|Pathway+Gothic+One" rel="stylesheet">
-
-  <!-- // Rubik -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-  <!--[endif]---->
-  <script>
-    $(function() {
-      // $('#main').addClass('backgroundOverlay');
-    });
-
-    function randomizeQuote() {
-      var quotes = ["“We hold ourselves back in ways both big and small, by lacking self-confidence, by not raising our hands, and by pulling back when we should be <b>leaning in</b>.” <i>Sherl Sandberg</i>",
-        "“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>”  <i>Michelle Obama</i>", "“Life is a series of building, testing, changing and iterating.” <i>Lauren Mosenthal (Glassbreakers CEO)</i>",
-        "“Do not ever let <b>anyone</b> make you feel like you don't matter, or like you don't have a place in our American story -- because you do. And you have the right to be exactly who you are.</b>”  <i>Michelle Obama</i>"
-      ];
-      var rand = Math.floor((Math.random() * (quotes.length - 1)));
-      document.getElementsByClassName("quote")[0].innerHTML = quotes[rand];
-    }
-    window.onload = randomizeQuote;
-  </script>
-
+  <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:100i,300,400,400i,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
-
-  <div id="full">
-    <div id="main">
-      <div id="landing">
-        <div id="title">Shirley Kabir</div>
+  <script src="static/js/script.js"></script>
+  <div id="landing">
+    <div id="inner">
+      <div class="about_me">
+        <h2>Shirley Kabir</h2> A junior computer science student at Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to coding. And also, very surprisingly, enjoys cooking and finding
+        aesthetic study spaces.
+      </div>
+      <div class="overhead">
         <h1>dijkstra imp<span aria-hidden="true"></span></h1>
-        <div id="desc">
-          A computer science student @ Cornell University who has a love for reaching out to kids and other communities, and is passionate about anything and everthing relating to the art of code. And also, very surprisingly, enjoys cooking and finding aesthetic
-          study spaces.
-        </div>
-        <div id="navigation">
-          <a href="resume_feb.pdf" target="_blank">resume</a>
-          <a href="https://github.com/shirleykabir">github</a>
-          <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
-        </div>
-        <br>
+      </div>
+      <div class="nav">
+        <a href="/resume.pdf">resume</a>
+        <a href="https://github.com/shirleykabir">github</a>
+        <a href="https://www.linkedin.com/in/shirleykabir/">linkedin</a>
       </div>
     </div>
-    <div id="misc">
-      <div class="quote">“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>”  <i>Michelle Obama</i></div>
-    </div>
-    <div id="what_i_do">
-      <h2>What I've Done So Far</h2>
-      <frontend>aurelia</frontend>
-      <frontend>react.js</frontend>
-      <frontend>javascript</frontend>
-      <frontend>data visualization</frontend>
-      <frontend>sketch</frontend>
-      <backend>c#</backend>
-      <backend>[my]sql</backend>
-      <backend>java</backend>
-      <backend>python</backend>
-      <backend>swift</backend>
-      <development>.net (core)</development>
-      <development>microsoft azure</development>
-      <development>django</development>
-      <other>data structures</other>
-      <other>software development life cycle </other>
-      <div id="where_to_go">
-        <div class="where projects_link">
-          <img src="static/img/logos/projects.svg">
-          <h3>Projects</h3>
-        </div>
-        <div class="where orgs_link">
-          <img src="static/img/logos/team.png">
-          <h3>Organizations</h3>
-        </div>
-        <div class="where work_link">
-          <img src="static/img/logos/work.png">
-          <h3 class="work_link">Work/Internships</h3>
-        </div>
-      </div>
-      <div id="content">
-        <div id="projects" style="display: block;">
-          <div class="travelnode">
-            <div class="macbook" style="float: right; right: 0px; width: 600px; overflow: hidden;">
-              <img src="static/img/macbookpro2.png" width="900" class="mac" style="float: right; margin-right: -300px;">
-              <img src="static/img/travelNodescreen.png" style="float: right; margin-top: -506px; margin-right: -145px; position: relative;" width="590">
-            </div>
-            <div class="desc">
-              <h4>travelNode</h4>
-              <h6>Hack The Valley 2 \\ Feb 2018</h6>
-              <h7>University of Toronto - Scarbrough</h7>
-            </div>
-          </div>
-          <div class="3110final">
-            <div class="macbook" style="float: left; margin-right: 30px; right: 0px; width: 600px; overflow: hidden;">
-              <img src="static/img/macbookpro2.png" width="900" class="mac" style="float: right; margin-right: -300px;">
-              <img src="static/img/clue.gif" style="float: right; margin-top: -506px; margin-right: -305px; position: relative;" width="750">
-            </div>
-            <div class="desc" style="margin-left: 30px;">
-              <h4>Cornell Clue</h4>
-              <h6>CS 3110 Final Project</h6>
-              <h7>Won Most Time Spent on Any Project Ever.</h7>
-            </div>
-          </div>
-        </div>
-        <div id="orgs" style="display: none;">
-          <div class="cuair">
-            <img src="static/img/cuairwebsite.png" width="900" style="float: right; margin-right: -300px">
-            <div class="desc">
-              <h4>Cornell University Unmanned Air Systems</h4>
-              <h6>Website and Outreach Lead</h6>
-            </div>
-          </div>
-          <div class="wicc">
-            <img src="static/img/wicc_total.jpg" width="700" style="float: left; margin-left: -60px">
-            <div class="desc right">
-              <h4>Women in Computing at Cornell</h4>
-              <h6>Advisor</h6>
-            </div>
-          </div>
-          <!-- <div class="cuair">
-            <img src="static/img/cuair_business.jpeg" height="300" style="float: right;" />
-            <h3>CUAir - Cornell University Unmanned Air Systems</h3>
-          </div>
-          <div class="wicc">
-            <img src="static/img/wicc_photo.jpg" height="300" style="float: left;" />
-            <h3>WICC - Women in Computing at Cornell</h3>
-          </div> -->
-        </div>
-        <div id="work" style="display: none;">
-          <div class="sc3">
-            <img src="static/img/sc3.jpg" width="700" style="float: left; margin-left: -60px">
-            <div class="desc right">
-              <h4>Software Development and Engineering Intern at SC3</h4>
-              <h6>Summer 2017 Internship</h6>
-            </div>
-          </div>
-          <div class="opis">
-            <img src="static/img/opis.svg" width="400" style="background-color:#aaa; float: right; margin-right: 70px">
-            <div class="desc left">
-              <h4>Software Intern at OPIS</h4>
-              <h6>Summer 2018 Internship</h6>
-            </div>
-          </div>
-          <div class="workday">
-            <img src="static/img/workday.png" width="300" style="float: left; margin-left: 60px">
-            <div class="desc right">
-              <h4>Software Intern (CO-OP) at Workday</h4>
-              <h6>Spring+Summer 2019 Internship</h6>
-            </div>
-          </div>
-          <!-- <div class="sc3">
-              <img src="static/img/sc3.jpg" height="300" style="float: right;" />
-              <h3>Software Development and Engineering Intern</h3>
-            </div>
-            <div class="puppetplant">
-              <img src="static/img/puppetplant.png" height="300" style="float: left;" />
-              <h3>Front End Development Intern</h3>
-            </div> -->
-        </div>
-      </div>
-
-
-    </div>
-
-    <!-- jQuery -->
-
-
-
-    <script>
-      // var elements = document.getElementsByClassName("current");
-      // console.log(elements);
-      // for(var i = 0; i<elements.length; i++) {
-      //   elements[i].style.display = 'none';
-      //   console.log(elements[i]);
-      // }
-      // $(".past").append("<p id='past'>past</p>");
-      // $(".current").append("<p id='current'>current</p>");
-      // $(".company").append("<p id='company'>company</p>");
-      // $(".organization").append("<p id='organization'>organization</p>");
-      // $(".projectteam").append("<p id='projectteam'>project team</p>");
-      // $(".project").append("<p id='project'>project</p>");
-      $("#orgs").hide();
-      $("#work").hide();
-      $("#projects").hide();
-      $(".projects_link").click(function() {
-        // Holds the product ID of the clicked element
-        $("#projects").show("slow", function() {
-          // Animation complete.
-        });
-        $("#orgs").hide();
-        $("#orgs").hide();
-      });
-      $(".orgs_link").click(function() {
-        // Holds the product ID of the clicked element
-        $("#orgs").show("slow", function() {
-          // Animation complete.
-        });
-        $("#work").hide();
-        $("#projects").hide();
-      });
-      $(".work_link").click(function() {
-        // Holds the product ID of the clicked element
-        $("#work").show("slow", function() {
-          // Animation complete.
-        });
-        $("#orgs").hide();
-        $("#projects").hide();
-      });
-    </script>
-
-
   </div>
+  <div id="what_i_do">
+    <div id="organizations">
+      <h3>organizations</h3>
+      <div class="item right">
+        <div class="side_image">
+          <img src="static/img/cuair_business.jpeg" />
+        </div>
+        <div class="browser">
+          <img src="static/img/cuair_browser.png" />
+        </div>
+        <div class="company">
+          <company>
+            <right>Cornell University<br /> Unmanned Air Systems</right>
+          </company>
+        </div>
+
+        <div class="desc">
+          <b>Website Lead</b><br /> CUAir is a project team that won 2nd of 50 teams internationally that designs, builds, and tests autonomous air vehicles.<br /> Designed, developed, and tested the current responsive website and increased social media
+          and community presence of the team.
+          <div class="skills">
+            <frontend>website development/maintenance</frontend>
+            <frontend>graphics design</frontend>
+            <other>communication</other>
+            <other>public relations</other>
+            <other>outreach</other>
+            <!-- <frontend>aurelia</frontend>
+            <frontend>react.js</frontend>
+            <frontend>javascript</frontend>
+            <frontend>data visualization</frontend>
+            <frontend>sketch</frontend>
+            <backend>c#</backend>
+            <backend>[my]sql</backend>
+            <backend>java</backend>
+            <backend>python</backend>
+            <backend>swift</backend>
+            <development>.net (core)</development>
+            <development>microsoft azure</development>
+            <development>django</development>
+            <other>data structures</other>
+            <other>software development life cycle </other> -->
+          </div>
+          <a href="cuair.org">visit our website!</a>
+        </div>
+
+
+      </div>
+      <div class="item left">
+        <div class="side_image">
+          <img src="static/img/wicc_total.jpg" />
+        </div>
+        <!-- <div class="browser">
+          <img src="static/img/cuair_browser.png"/>
+        </div> -->
+        <div class="company">
+          <company>
+            <right>Women in Computing at Cornell</right>
+          </company>
+        </div>
+
+        <div class="desc">
+          <b>Social Director</b><br /> WICC's goal? To encourage prospective women and to expand their opportunities, and provide support to existing women in computing fields so that they can carve their own paths in CS.<br /> In previous semesters I
+          was Secretary and Advisor.
+          <div class="skills">
+            <other>communication</other>
+            <other>leadership</other>
+          </div>
+          <a href="https://wicc.acm.org/index.php">learn more</a>
+        </div>
+
+      </div>
+    </div>
+    <div id="projects">
+      <h3>projects</h3>
+      <div class="item right">
+        <div class="side_image">
+          <img src="static/img/clue1.jpeg" />
+        </div>
+        <div class="browser">
+          <img src="static/img/clue.gif" class="need_border" />
+
+        </div>
+        <div class="company">
+          <company>
+            <right>cornell clue</right>
+          </company>
+        </div>
+
+        <div class="desc">
+          <b>CS 3110 Final Project</b><br /> Won most time ever spent on a project in existence ever.
+          <div class="skills">
+            <backend>ocaml</backend>
+            <frontend>javascript</frontend>
+            <!-- <development>google [maps] api</development> -->
+            <!-- <development>spotify api</development> -->
+          </div>
+          <a href="https://shirleykabir.github.io/cs3110finalproject/">check it out</a>
+        </div>
+
+      </div>
+      <div class="item left">
+        <div class="side_image">
+          <img src="static/img/hackthevalley2.jpg" />
+        </div>
+        <div class="browser">
+          <img src="static/img/travelNode.gif" class="need_border" />
+          <!-- <img src="static/img/frame.png"/> -->
+        </div>
+        <div class="company">
+          <company>
+            <right>travelNode</right>
+          </company>
+        </div>
+
+        <div class="desc">
+          <b>Hack the Valley 2</b><br /> A web app that allows you to enter several destinations and returns the optimal route to reach all of those places in the shortest amount of time, and total cost of travel with an Uber.
+          <div class="skills">
+            <backend>flask</backend>
+            <development>uber api</development>
+            <development>google [maps] api</development>
+          </div>
+          <a href="https://wicc.acm.org/index.php">learn more</a>
+        </div>
+      </div>
+      <div class="item right">
+        <div class="side_image">
+          <img src="static/img/shehacks.JPG" />
+        </div>
+        <div class="browser">
+          <img src="static/img/serene.gif" class="need_border" />
+          <!-- <img src="static/img/frame.png"/> -->
+        </div>
+        <div class="company">
+          <company>
+            <right>serene</right>
+          </company>
+        </div>
+
+        <div class="desc">
+          <b>SheHacks Boston</b><br /> A mental health awareness bot to converse with that will appropriately responds, pre-diagnoses, suggests playlists/songs, and locates the right professionals.
+          <div class="skills">
+            <backend>node.js</backend>
+            <development>google [maps] api</development>
+            <development>spotify api</development>
+          </div>
+          <a href="https://wicc.acm.org/index.php">learn more</a>
+        </div>
+
+      </div>
+    </div>
+    <div id="work">
+      <h3>work</h3>
+      <h5>I've had the priviledge to work and be a part some incredible teams for the following companies over the last two years.</h5>
+      <!-- <img src="static/img/workday_logo.png" width="150" />
+      <h4>[Incoming] Software Development Intern at Workday</h4>
+      <img src="static/img/ihs_markit_logo.png" width="190" />
+      <h4>Software Engineering Intern at OPIS (Oil Price Information Service)</h4>
+      <img src="static/img/sc3_logo.png" width="270" />
+      <h4>Software Development and Engineering Intern at SC3</h4> -->
+      <div class="work_inner">
+        <table>
+          <tr>
+            <div class="less">spring + summer 2019</div>
+            <div class="more">Excited to be working as a Software Application Engineer Co-Op for the Student team at Workday starting in January.</div>
+          </tr>
+          <div class="less">summer 2018</div>
+          <div class="more">Currently a Software Development Intern at Oil Price Information Service on the Retail team in Gaithersburg, MD. Working on a team to develop a mapping service for AAA and Comdata in an agile environment.</div>
+          <div class="skills">
+            <backend>c#</backend>
+            <backend>sql/ssms</backend>
+            <frontend>aurelia</frontend>
+            <frontend>html/css</frontend>
+            <frontend>javascript</frontend>
+            <development>amazon web services</development>
+            <development>.net core</development>
+            <other>agile development</other>
+          </div>
+        </tr>
+        <div class="less">summer 2017</div>
+        <div class="more">Software Development and Engineering Intern at SC3 - a government contracting company. Built an onboarding platform for the HR team.</div>
+        <div class="skills">
+          <backend>python</backend>
+          <backend>ssl</backend>
+          <backend>mysql</backend>
+          <frontend>html/css</frontend>
+          <frontend>javascript</frontend>
+          <development>django</development>
+        </div>
+        <tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="education">
+    <div class="work_inner">
+      <div id="cornell">
+      <img src="static/img/cornell_building_holo.png" style="text-align: center; width: 300px;" />
+      <div class="school_right">
+        <h4>Cornell University</h4>
+      Bachelors of Science in Computer Science in the School of Engineering<br /><br />
+      Expected Graduation: May 2020<br / /><br />
+      Rewriting the Code Member
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="quotes">
+    <div class="quote">“As women, we must stand up for ourselves... for each other... for justice, <b>for all.</b>” <i>Michelle Obama</i></div>
+  </div>
+
 </body>
+
 </html>
