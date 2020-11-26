@@ -168,6 +168,7 @@
     position: sticky;
     z-index: -1;
     display: none;
+    z-index: 1000;
   }
   
   #sidebar h1 {
