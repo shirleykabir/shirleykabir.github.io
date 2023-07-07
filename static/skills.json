@@ -1,6 +1,29 @@
 {
-    "Languages": ["Python", "Java", "Javascript", "OCaml", "SQL"], 
-    "Tools": ["Adobe XD", "Figma", "Photoshop", "Microsoft Office Suite"],
-    "Libraries": ["PyTorch", "TensorFlow", "React.js", "Node.js", ".NET"], 
-    "Soft": ["Leadership", "Organizational", "Mentorship"] 
+    "Languages": [
+        "Typescript",
+        "Python",
+        "Java",
+        "OCaml",
+        "SQL"
+    ],
+    "Tools": [
+        "Figma",
+        "Adobe XD",
+        "Photoshop",
+        "Microsoft Office Suite"
+    ],
+    "Libraries": [
+        "React.js",
+        "Node.js",
+        "Angular",
+        "PyTorch",
+        "TensorFlow",
+        ".NET"
+    ],
+    "Soft": [
+        "Scrum Master",
+        "Leadership",
+        "Organizational",
+        "Mentorship"
+    ]
 }

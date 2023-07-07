@@ -127,9 +127,9 @@ h6 {
             opacity: 0.75;
             z-index: -1; */
   background: var(--title-color);
-  background-image: url("images/me.jpg");
+  background-image: url("images/me4.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: 30% 30%;
   overflow: hidden;
   width: 30vw;
   height: 36vh;
@@ -264,8 +264,7 @@ h6 {
   margin-right: 5px;
 }
 
-#work h1,
-#skills-tools h1 {
+.title {
   position: relative;
   width: 300px;
   height: 64px;
@@ -273,14 +272,12 @@ h6 {
   padding-top: 50px;
   background: var(--bg-color);
   /* background: rgb(242, 242, 242); */
-  background: linear-gradient(
-    180deg,
-    rgba(242, 242, 242, 0.1) 0%,
-    rgba(242, 242, 242, 0.75) 25%,
-    rgba(242, 242, 242, 1) 50%,
-    rgba(242, 242, 242, 0.7) 75%,
-    rgba(242, 242, 242, 0.1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(242, 242, 242, 0.1) 0%,
+      rgba(242, 242, 242, 0.75) 25%,
+      rgba(242, 242, 242, 1) 50%,
+      rgba(242, 242, 242, 0.7) 75%,
+      rgba(242, 242, 242, 0.1) 100%);
   font-family: var(--header-font);
   font-style: normal;
   font-weight: bold;
@@ -292,18 +289,28 @@ h6 {
   z-index: 100000;
 }
 
-#work h1 {
-  background: linear-gradient(
-    180deg,
-    rgba(242, 242, 242, 1) 0%,
-    rgba(242, 242, 242, 1) 25%,
-    rgba(242, 242, 242, 1) 50%,
-    rgba(242, 242, 242, 0.75) 75%,
-    rgba(242, 242, 242, 0.1) 100%
-  );
+#job {
+  padding-bottom: 100px;
 }
 
-#work h1::after {
+#job .title {
+  left: -198px;
+}
+
+#work .title {
+  padding-top: 50px;
+}
+
+#job .title {
+  background: linear-gradient(180deg,
+      rgba(242, 242, 242, 1) 0%,
+      rgba(242, 242, 242, 1) 25%,
+      rgba(242, 242, 242, 1) 50%,
+      rgba(242, 242, 242, 0.75) 75%,
+      rgba(242, 242, 242, 0.1) 100%);
+}
+
+#job .title::after {
   font-weight: bold;
   content: "work.work.";
   -webkit-text-fill-color: transparent;
@@ -311,7 +318,15 @@ h6 {
   -webkit-text-stroke-width: 0.001px;
 }
 
-#skills-tools h1::after {
+#work .title::after {
+  font-weight: bold;
+  content: "projects.projects.";
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.001px;
+}
+
+#skills-tools .title::after {
   font-weight: bold;
   content: "skills.skills.";
   -webkit-text-fill-color: transparent;
@@ -319,7 +334,7 @@ h6 {
   -webkit-text-stroke-width: 0.001px;
 }
 
-#work .project h1::after {
+#job .project .title::after {
   content: "";
 }
 
@@ -712,12 +727,15 @@ term b {
   0% {
     background-color: red;
   }
+
   25% {
     background-color: yellow;
   }
+
   50% {
     background-color: blue;
   }
+
   100% {
     background-color: green;
   }
@@ -894,6 +912,12 @@ term b {
   font-weight: bold;
   margin: 5px 0;
   color: #887414;
+}
+
+#job #jobs {
+  position: relative;
+  top: 50px;
+  margin: 0;
 }
 
 #fun span img,

@@ -15,7 +15,10 @@
       "Download the paper": "/static/pdfs/maclaurin-download.pdf",
       "Read our report": "/static/pdfs/hypergrad-download.pdf"
     },
-    "images": ["static/images/original-paper.png", "static/images/hypergrad.png"]
+    "images": [
+      "static/images/original-paper.png",
+      "static/images/hypergrad.png"
+    ]
   },
   {
     "id": "indigo",
@@ -33,7 +36,9 @@
       "Check this out": "href",
       "View the code": "href"
     },
-    "images": ["static/images/indigo.gif"]
+    "images": [
+      "static/images/indigo.gif"
+    ]
   },
   {
     "id": "cuair-website",
@@ -50,7 +55,9 @@
     "links": {
       "Check this out": "http://cuair.org/"
     },
-    "images": ["static/images/cuair-website.png"]
+    "images": [
+      "static/images/cuair-website.png"
+    ]
   },
   {
     "id": "neighborhood",
@@ -68,8 +75,13 @@
       "Check this out": "https://theperfectneighborhood-ex.herokuapp.com/",
       "View the code": "https://github.com/llistephanie/cs4300sp2020-sc2524-kyh24-rdz26-sk2279-szk4"
     },
-    "quirks": ["<img src='https://img.icons8.com/material-outlined/24/000000/merge-git.png'/> 114 commits"],
-    "images": ["static/images/neighborhood-fe.png", "static/images/tpn2.gif"]
+    "quirks": [
+      "<img src='https://img.icons8.com/material-outlined/24/000000/merge-git.png'/> 114 commits"
+    ],
+    "images": [
+      "static/images/neighborhood-fe.png",
+      "static/images/tpn2.gif"
+    ]
   },
   {
     "id": "travelnode",
@@ -86,7 +98,10 @@
     "links": {
       "View the code": "https://github.com/shirleykabir/travelNode"
     },
-    "images": ["static/images/travelnode.png", "static/images/travel.gif"]
+    "images": [
+      "static/images/travelnode.png",
+      "static/images/travel.gif"
+    ]
   },
   {
     "id": "pix2vox",
@@ -103,7 +118,10 @@
     "links": {
       "Download the paper": "/static/pdfs/pix2vox-download.pdf"
     },
-    "images": ["static/images/pix2voxpaper1.png", "static/images/pix2vox.png"]
+    "images": [
+      "static/images/pix2voxpaper1.png",
+      "static/images/pix2vox.png"
+    ]
   },
   {
     "id": "pacai",
@@ -121,7 +139,10 @@
       "Referenced Paper": "https://medium.com/analytics-vidhya/understanding-genetic-algorithms-in-the-artificial-intelligence-spectrum-7021b7cc25e7",
       "View the code": "https://github.coecis.cornell.edu/szk4/cs4701final"
     },
-    "images": ["static/images/pacai.gif","static/images/genetic.gif"]
+    "images": [
+      "static/images/pacai.gif",
+      "static/images/genetic.gif"
+    ]
   },
   {
     "id": "clue",
@@ -140,7 +161,11 @@
       "View the OCaml code": "https://github.coecis.cornell.edu/szk4/cs3110-finalproject",
       "View the Javascript code": "https://github.coecis.cornell.edu/szk4/cs4701final"
     },
-    "quirks": ["<img src='https://img.icons8.com/material-outlined/24/000000/merge-git.png'/> 68 commits"],
-    "images": ["static/images/clue.gif"]
+    "quirks": [
+      "<img src='https://img.icons8.com/material-outlined/24/000000/merge-git.png'/> 68 commits"
+    ],
+    "images": [
+      "static/images/clue.gif"
+    ]
   }
 ]

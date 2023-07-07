@@ -37,9 +37,9 @@ $(window).scroll(function () {
     // var header2Bottom=$(window).scrollTop() + $("#skills-tools h2").position().top + $("#skills-tools h2").offset().top + $("#skills-tools h2").outerHeight(true);
   if (
     $(window).scrollTop() + $(window).height() >
-      $("#work h2").position().top +
-        $("#work h2").offset().top +
-        $("#work h2").outerHeight(true) +
+      $("#job h1").position().top +
+        $("#job h1").offset().top +
+        $("#job h1").outerHeight(true) +
         100
   ) {
     $("#sidebar").fadeIn();
